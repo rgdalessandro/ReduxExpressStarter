@@ -6,8 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
-	      Redux Express Starter
-		    {/*{this.props.children}*/}
+	      React Express Starter
       </div>
     );
   }
