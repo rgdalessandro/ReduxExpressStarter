@@ -1,6 +1,7 @@
 'use strict';
 
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   entry: [
@@ -26,8 +27,10 @@ module.exports = {
     }]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
+    fallback: path.join(__dirname, "node_modules")
   },
+  resolveLoader: { fallback: path.join(__dirname, "node_modules") },
   devServer: {
     historyApiFallback: true,
     contentBase: './public',
