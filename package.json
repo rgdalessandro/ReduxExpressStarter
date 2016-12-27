@@ -1,7 +1,7 @@
 {
   "name": "redux-express-starter",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React, Router, Boostrap Material and Babel support",
+  "description": "Simple starter package for Redux with React, Router and Boostrap Material with Webpack and Babel support",
   "main": "index.js",
   "repository": "https://github.com/rgdalessandro/ReduxSimpleStarter.git",
   "scripts": {
@@ -12,7 +12,7 @@
     "test:watch": "npm run test -- --watch"
   },
   "author": "Ricardo D'Alessandro",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
