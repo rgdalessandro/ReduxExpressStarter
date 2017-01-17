@@ -26,6 +26,6 @@ Checkout this repo, install dependencies, set environment variable, then start t
 	> npm install
 	> export NODE_ENV=production
 	> npm run postinstall
-	> npm start
+	> npm start (or pm2 start, or forever start)
 ```
 Point your browswer to http://localhost:5000
