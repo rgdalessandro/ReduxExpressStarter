@@ -12,7 +12,7 @@ Checkout this repo, install dependencies, then start the process with the follow
 ```
 	> git clone https://github.com/rgdalessandro/ReduxExpressStarter.git
 	> cd ReduxExpressStarter
-	> npm install (or yarn install)
+	> npm install #(or yarn install)
 	> npm run dev
 ```
 Point your browswer to http://localhost:8080
@@ -26,6 +26,7 @@ Checkout this repo, install dependencies, set environment variable, then start t
 	> npm install (or yarn install)
 	> export NODE_ENV=production
 	> npm run postinstall
-	> npm start (or pm2 start, or forever start)
+	> npm start #(or pm2 start, or forever start)
 ```
 Point your browswer to http://localhost:5000
+node 
