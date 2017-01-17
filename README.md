@@ -23,7 +23,7 @@ Checkout this repo, install dependencies, set environment variable, then start t
 ```
 	> git clone https://github.com/rgdalessandro/ReduxExpressStarter.git
 	> cd ReduxExpressStarter
-	> npm install (or yarn install)
+	> npm install #(or yarn install)
 	> export NODE_ENV=production
 	> npm run postinstall
 	> npm start #(or pm2 start, or forever start)
