@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/rgdalessandro/ReduxSimpleStarter.git",
   "scripts": {
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js  --host 0.0.0.0",
+    "dev": "nodemon ./node_modules/webpack-dev-server/bin/webpack-dev-server.js  --host 0.0.0.0",
     "postinstall": "webpack -p",
     "start": "node ./server/server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
