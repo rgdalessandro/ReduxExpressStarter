@@ -1,6 +1,6 @@
 # ReduxExpressStarter
 
-Use this webpack enabled boilerplate to quickly get started on a fullstack application running React, React Router, Redux and Bootstrap Material on the frontend with Node and Express on the backend. If you would like a more lightweight boiler plate and do without Bootstrap Material, please checkout the branch called 'minimal' after cloning down the repo. If you would like to strip out Redux and Router, please checkout the branch called 'react-only' after cloning down the repo.
+Use this webpack enabled boilerplate to quickly get started on a full stack application running React, React Router, Redux and Bootstrap Material on the frontend with Node and Express on the backend. If you would like a more lightweight boiler plate and do without Bootstrap Material, please checkout the branch called 'minimal' after cloning down the repo. If you would like to strip out Redux and Router, please checkout the branch called 'react-only' after cloning down the repo.
 
 ###Getting Started###
 
