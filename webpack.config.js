@@ -1,12 +1,9 @@
 'use strict';
 
 const webpack = require('webpack');
-const path = require('path');
 
 module.exports = {
-  entry: [
-    './client/index.js'
-  ],
+  entry: ['babel-polyfill', './client/index.js'],
   output: {
     path: './public',
     publicPath: '/',
@@ -22,15 +19,13 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        presets: ['react', 'es2015', 'stage-1']
+        presets: ['react', 'es2015', 'stage-0']
       }
     }]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
-    fallback: path.join(__dirname, "node_modules")
+    extensions: ['', '.js', '.jsx']
   },
-  resolveLoader: { fallback: path.join(__dirname, "node_modules") },
   devServer: {
     historyApiFallback: true,
     contentBase: './public',
