@@ -15,7 +15,7 @@ Checkout this repo, install dependencies, then start the process with the follow
 	> npm install #(or yarn install)
 	> npm run dev
 ```
-Point your browswer to http://localhost:8080
+Point your browser to http://localhost:8080
 
 #### Production Environment?
 Checkout this repo, install dependencies, set environment variable, then start the process with the following:
@@ -25,7 +25,7 @@ Checkout this repo, install dependencies, set environment variable, then start t
 	> cd ReduxExpressStarter
 	> npm install #(or yarn install)
 	> export NODE_ENV=production
-	> npm run postinstall
+	> npm run build
 	> npm start #(or pm2 start, or forever start)
 ```
-Point your browswer to http://localhost:5000
+Point your browser to http://localhost:5000
