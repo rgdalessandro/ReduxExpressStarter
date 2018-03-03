@@ -1,5 +1,11 @@
-### Bundle.js
-/public/bundle.js
+### Production Build Files
+**/build
+
+### Dependencies
+**/node_modules
+
+### Bower ###
+**/bower_components/
 
 ### Windows ###
 # Windows image file caches
@@ -36,16 +42,9 @@ lib-cov
 *.pid
 *.gz
 
-
 # Logs
 logs
 *.log
-
-### Bower ###
-**/bower_components/
-
-# Deps
-node_modules
 
 ### IntelliJ & PhPStorm
 *.iml

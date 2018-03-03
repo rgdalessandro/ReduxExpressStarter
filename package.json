@@ -1,40 +1,28 @@
 {
   "name": "redux-express-starter",
-  "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Router with Webpack and Babel support",
-  "main": "index.js",
-  "repository": "https://github.com/rgdalessandro/ReduxSimpleStarter.git",
+  "version": "2.0.0",
+  "description": "Simple starter package for a full stack web application running React and Express",
   "scripts": {
-    "build": "webpack -p",
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js  --host 0.0.0.0",
-    "start": "nodemon ./server/server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "postinstall": "cd client && yarn",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/server.js",
+    "client": "cd client && yarn start",
+    "build": "cd client && yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgdalessandro/ReduxExpressStarter.git"
   },
   "author": "Ricardo D'Alessandro",
   "license": "MIT",
-  "devDependencies": {
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
-    "babel-preset-stage-0": "^6.22.0",
-    "chai": "^3.5.0",
-    "chai-jquery": "^2.0.0",
-    "jquery": "^2.2.1",
-    "jsdom": "^8.1.0",
-    "mocha": "^2.4.5",
-    "nodemon": "^1.11.0",
-    "react-addons-test-utils": "^0.14.7",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+  "bugs": {
+    "url": "https://github.com/rgdalessandro/ReduxExpressStarter/issues"
   },
+  "homepage": "https://github.com/rgdalessandro/ReduxExpressStarter#readme",
   "dependencies": {
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "react-redux": "^4.0.0",
-    "react-router": "^2.0.1",
-    "redux": "^3.0.4"
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
   }
 }
