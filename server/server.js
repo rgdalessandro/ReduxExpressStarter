@@ -9,10 +9,6 @@ const assetFolder = path.join(__dirname, '../client/build');
 
 app.use(express.static(assetFolder));
 
-app.get('/ping', (req, res) => {
-  res.json('pong');
-});
-
 app.get('*', (req, res) => {
   res.sendFile(path.join(assetFolder, 'index.html'));
 });

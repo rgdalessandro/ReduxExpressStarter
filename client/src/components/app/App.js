@@ -4,7 +4,6 @@ import './App.css';
 
 class App extends Component {
   render() {
-    fetch('/ping');
     return (
       <div className="App">
         <header className="App-header">

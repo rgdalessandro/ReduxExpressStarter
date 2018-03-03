@@ -7,7 +7,9 @@
     "start": "concurrently \"yarn run server\" \"yarn run client\"",
     "server": "node server/server.js",
     "client": "cd client && yarn start",
-    "build": "cd client && yarn build"
+    "build": "cd client && yarn build",
+    "test": "cd client && react-scripts test --env=jsdom",
+    "eject": "cd client && react-scripts eject"
   },
   "repository": {
     "type": "git",
