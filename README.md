@@ -1,33 +1,32 @@
 # ReduxExpressStarter
 
-Use this webpack, babel and hot-reloading enabled boilerplate to quickly get started on a full stack application running React, React Router and Redux on the frontend with Node and Express on the backend.
+Use this Webpack, Babel and Hot Reloading enabled boilerplate to quickly get started on a full stack application running React, React Router and Redux on the frontend with Node and Express on the backend. This boilerplate is currently only compatible with linux based systems.
 
 ## Getting Started
 
 There are two methods for getting started with this repo.
 
-#### Development Environment?
+#### Local Development Environment?
 Checkout this repo, install dependencies, then start the process with the following:
 
 ```
 	> git clone https://github.com/rgdalessandro/ReduxExpressStarter.git
 	> cd ReduxExpressStarter
-	> npm install #(or yarn install)
+	> npm install #(or yarn)
 	> npm start #(or yarn start)
 ```
-Your browser should open and take you to http://localhost:3000
+Your browser should open and take you to http://localhost:3000 . Client side changes hot reload automatically. Server side changes will require you to stop the server (ctr + c) and restart it  again (yarn start).
 
-#### Production Environment?
+#### Production Web Server Environment?
 Checkout this repo, install dependencies, then start the process with the following:
 
 ```
 	> git clone https://github.com/rgdalessandro/ReduxExpressStarter.git
 	> cd ReduxExpressStarter
-	> npm install #(or yarn install)
-	> npm run build #(or yarn run build)
-	> npm start #(or pm2 start, or forever start)
+	> npm install #(or yarn)
+	> npm run server #(or yarn run server, or pm2 start, or forever start)
 ```
-Point your browser to http://localhost:5000
+Point your browser to http://localhost:5000 .
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
