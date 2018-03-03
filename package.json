@@ -3,8 +3,8 @@
   "version": "2.0.0",
   "description": "Simple starter package for a full stack web application running React and Express",
   "scripts": {
-    "postinstall": "cd client && yarn",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "postinstall": "cd client && yarn && yarn build",
+    "start": "concurrently \"yarn run server\" \"yarn run client\"",
     "server": "node server/server.js",
     "client": "cd client && yarn start",
     "build": "cd client && yarn build"
